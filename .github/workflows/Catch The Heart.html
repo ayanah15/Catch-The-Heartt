@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body style="height:100vh; background:#fff0f5; position:relative;">
+
+<h2 style="text-align:center;">Catch the heart 💗</h2>
+
+<button id="heart"
+style="position:absolute; font-size:30px; border:none; background:none;">
+💖
+</button>
+
+<script>
+const heart = document.getElementById("heart");
+
+heart.addEventListener("mouseover", () => {
+  heart.style.left = Math.random()*90 + "vw";
+  heart.style.top = Math.random()*80 + "vh";
+});
+
+heart.addEventListener("click", () => {
+  document.body.innerHTML = "<h1 style='text-align:center;'>You caught my heart 🥹💘</h1>";
+});
+</script>
+
+</body>
+</html>
